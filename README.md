@@ -10,19 +10,20 @@ dari paket MFRC522 . biasanya satu paket MFRC522 berisi 1 reader, 1 card dan 1 k
 
 kode sudah di modifikasi agar bisa dipakai di NodeMCU v1.
 dengan konfigurasi pin sebagai berikut:
-| RFID      | NodeMCU       |
-+===========+===============+
-| RST/Reset | D1            |
-+-----------+---------------+
-| SPI SS    | D2            |
-+-----------+---------------+
-| SPI MOSI  | D7            |
-+-----------+---------------+
-| SPI MISO  | D6            |
-+-----------+---------------+
-| SPI SCK   | D5            |
-+-----------+---------------+
 
+MFRC522 --> NodeMCU
+
+RST/Reset   --> D1
+
+SPI SS/SDA  --> D2
+
+SPI MOSI    --> D7
+
+SPI MISO    --> D6
+
+SPI SCK     --> D5
+
+nb: pin SS/SDA dan RST biasanya pada tutorial lain menggunakan pin yang berbeda, karena memang configurable bisa dicoba untuk di ganti ke pin lain. jika di ganti ke pin lain, pada kode SS_PIN dan RST_PIN harus di update juga.
 
 langkah-langkah:
 - buka arduino IDE
